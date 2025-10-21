@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bioskop Cimahi</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    body {
+      background: linear-gradient(120deg, #fff5f5, #fff);
+      color: #333;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* 🌟 NAVBAR STYLING - MODERN & ELEGAN */
+    .navbar {
+      backdrop-filter: blur(12px);
+      background: rgba(255, 0, 0, 0.85);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .navbar:hover {
+      background: rgba(255, 0, 0, 0.95);
+    }
+
+    .navbar-brand {
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      margin: 0 10px;
+      padding: 6px 14px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background: #fff;
+      color: #d90429 !important;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar-toggler {
+      border: none;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* 🎬 WELCOME SECTION */
+    .welcome {
+      text-align: center;
+      padding: 80px 20px;
+      margin: 80px auto 40px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      max-width: 1000px;
+    }
+
+    .welcome h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #d90429;
+      margin-bottom: 15px;
+    }
+
+    .welcome p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .btn-danger {
+      background-color: #d90429;
+      border: none;
+      border-radius: 10px;
+      transition: 0.3s;
+      padding: 10px 25px;
+    }
+
+    .btn-danger:hover {
+      background-color: #a7001f;
+      transform: scale(1.05);
+    }
+
+    /* 🎞 CARD SECTION */
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    h2 {
+      color: #d90429;
+      font-weight: 700;
+    }
+
+    /* 🍿 FOOTER */
+    footer {
+      background: #d90429;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+      letter-spacing: 0.5px;
+    }
+
+    /* 🌈 Smooth scroll effect */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">🎬 Bioskop Cimahi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#jadwal">Jadwal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#makanan">Menu Makanan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- WELCOME SECTION -->
+  <section class="welcome container">
+    <h1>Selamat Datang di Bioskop Cimahi</h1>
+    <p>Tonton film favoritmu, nikmati suasana nyaman, dan rasakan pengalaman menonton terbaik di kota Cimahi!</p>
+    <a href="#jadwal" class="btn btn-danger mt-3">🎟 Lihat Jadwal Film</a>
+  </section>
+
+  <!-- JADWAL FILM -->
+  <section id="jadwal" class="container my-5">
+    <h2 class="text-center mb-4">🎞 Jadwal Film Hari Ini</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/film1.jpg" alt="Film 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Bagaimana Jika...</h5>
+            <p>Tayang: 10.00 | 13.30 | 19.00</p>
+            <button class="btn btn-danger btn-sm">Pesan Tiket</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/film2.jpg" alt="Film 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Harusnya Kita...</h5>
+            <p>Tayang: 11.00 | 15.00 | 20.00</p>
+            <button class="btn btn-danger btn-sm">Pesan Tiket</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/film3.jpg" alt="Film 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Hannah dan Nala</h5>
+            <p>Tayang: 09.30 | 14.30 | 18.30</p>
+            <button class="btn btn-danger btn-sm">Pesan Tiket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU MAKANAN -->
+  <section id="makanan" class="container my-5">
+    <h2 class="text-center mb-4">🍿 Menu Makanan & Minuman</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card text-center">
+          <img src="img/popcorn.jpg" alt="Popcorn">
+          <div class="card-body">
+            <h5>Popcorn</h5>
+            <p>Rp 25.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center">
+          <img src="img/minuman.jpg" alt="Minuman">
+          <div class="card-body">
+            <h5>Minuman Soda</h5>
+            <p>Rp 15.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center">
+          <img src="img/burger.jpg" alt="Burger">
+          <div class="card-body">
+            <h5>Burger Mini</h5>
+            <p>Rp 30.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card text-center">
+          <img src="img/hotdog.jpg" alt="Hotdog">
+          <div class="card-body">
+            <h5>Hotdog</h5>
+            <p>Rp 28.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
